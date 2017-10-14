@@ -1,0 +1,48 @@
+@charset "UTF-8";
+#bkgimgHead{
+   width:100%; 
+   height:50px;
+   line-height:80px;
+   margin:-5px 0 0 0;
+   background-image:url(../../../image/default/regHead.png);
+   background-repeat:no-repeat;
+   background-position: center;
+   text-align:center;
+   color:#117ad6;
+   font-size:26px;
+   }
+   
+   #bkgimg2{
+   width:90%;
+   height:460px;
+   margin:auto;
+   background-color:white;
+   }
+   #inform{
+   width:90%;
+padding:10% 0 0 7%;
+}
+   #name,#tele{
+   border:1px solid #CCC;
+   width:54%;
+   border-radius: 5px;
+   }
+   #typDes{
+   border:1px solid #CCC;
+   width:55%;
+   border-radius: 5px;
+   }
+   #sendSms{
+   border:1px solid #CCC;
+   width:32%;
+   text-align:center;
+   font-size:13px;
+   height:19px;
+   background-color: #CCC;
+   border-radius: 4px;
+   }
+   #valicode{
+   border:1px solid #CCC;
+   width:17%;
+   border-radius: 4px;
+   }

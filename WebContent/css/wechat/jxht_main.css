@@ -1,0 +1,115 @@
+@charset "UTF-8";
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, blockquote, pre, form, input, textarea, fieldset, table, th, td{margin:0;padding:0; font-family:"Microsoft YaHei",SimSun;vertical-align:middle;}
+body, button{ font-size:1rem; text-align:center;}
+body{color:#333;}
+ul, ol, li{list-style:none;}
+img{border:none;}
+a {text-decoration:none;color:#08c;}
+input:-webkit-autofill,textarea:-webkit-autofill,select:-webkit-autofill{
+	background-color:rgba(0,0,0,0);
+}
+html,body{
+	height:100%;
+}
+
+/*注册-start--------------------------------------------------------------------------*/
+body.jxht_body{
+	background-color:#ffffff ;
+	background-image:url(../../image/wechat/jxht_reg_bg.jpg);
+    background-repeat:no-repeat;
+	background-size:cover;
+}
+.jxht_reg{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:#ffffff url(../../image/wechat/jxht_reg_bg.jpg) no-repeat;
+	background-size:cover;
+}
+.jxht_reg_inputbox{
+	margin:20% auto 0 auto;
+	width:80%;
+	height:auto;
+	background:url(../../image/wechat/jxht_reg_lrbg.png) no-repeat;
+	background-size:100% auto;
+}
+.jxht_reg_inbox_1{
+	padding:22% 0 0 17%;
+	width:65%;
+	height:10%;
+	transform: skewY(-10deg);
+}
+.jxht_reg_inbox_1>input{
+	width:90%;
+	height:100%;
+	background:none;
+	border:none;
+	color:#fff;
+	font-size:1.2rem;
+}
+
+.jxht_reg_inbox_2{
+	padding:28% 0 0 5%;
+	width:90%;
+	height:20%;
+	text-align:left;
+	transform: skewY(-10deg);
+}
+
+.jxht_reg_inbox_2>input.jxht_reg_inputyzm{
+	width:50%;
+	hight:100%;
+	margin:8px 0 0 0;
+	background:none;	
+	border:none;
+	color:#fff;
+	font-size:1.2rem;
+}
+
+.jxht_reg_inbox_2>div.jxht_reg_yzm{
+	display:inline-block;
+	margin-top:15px;
+	padding:2px 5px 2px 5px;
+	background:#555;
+	font-size:1rem;
+	color:#eee;
+}
+.jxht_reg_inbox_3{
+	padding:28% 0 13% 18%;
+	width:90%;
+	height:8%;
+	text-align:left;
+	transform: skewY(-10deg);
+}
+.jxht_reg_inbox_3>input.jxht_reg_inputyqr{
+	width:60%;
+	hight:100%;
+	background:none;	
+	border:none;
+	color:#fff;
+	font-size:1.2rem;
+}
+	
+.jxht_reg_inbox_3>div.jxht_reg_yqr{
+	padding:2px 0 0 0;
+	display:inline-block;
+	font-size:0.8rem;
+	color:#eee;
+}
+
+.jxht_reg_inputbtn{
+	display:block;
+	margin:4rem auto 0 auto;
+	width:42%;
+	padding: .3em 0;
+	border: 1px solid rgba(0,0,0,.1);
+	background: #fff;
+	border-radius: .2rem;
+	box-shadow: .3rem .3rem 0rem rgba(0,0,0,1);
+	color:#000;
+	font-size: 125%;
+	line-height: 1.5;
+}
+/*注册-end--------------------------------------------------------------------------*/

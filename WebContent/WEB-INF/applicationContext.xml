@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+  xmlns:aop="http://www.springframework.org/schema/aop"  
+  xmlns:tx="http://www.springframework.org/schema/tx"   
+  xmlns:jdbc="http://www.springframework.org/schema/jdbc"  
+  xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="          
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd          
+      http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd          
+      http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd          
+      http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd          
+      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
+     >
+      
+    <!-- jdbc属性文件读入 -->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+      
+	
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="${jdbc.driver_tele}" />
+		<property name="jdbcUrl" value="${jdbc.url_tele}" />
+		<property name="user" value="${jdbc.username_tele}" />
+		<property name="password" value="${jdbc.password_tele}" />
+		
+		 <!--连接池中保留的最小连接数。-->
+    <property name="minPoolSize" value="5"/>
+    
+    <!--连接池中保留的最大连接数。Default: 15 -->
+    <property name="maxPoolSize" value="30"/>
+    
+    <!--初始化时获取的连接数，取值应在minPoolSize与maxPoolSize之间。Default: 3 -->
+    <property name="initialPoolSize" value="10"/>
+    
+    <!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+    <property name="maxIdleTime" value="10"/>
+    
+    <!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+    <property name="acquireIncrement" value="5"/>
+    
+    <!--JDBC的标准参数，用以控制数据源内加载的PreparedStatements数量。
+		    但由于预缓存的statements属于单个connection而不是整个连接池。所以设
+		    置这个参数需要考虑到多方面的因素。如果maxStatements与maxStatementsPerConnection
+		    均为0，则缓存被关闭。Default: 0-->
+    <property name="maxStatements" value="0"/>
+    
+    <!--每60秒检查所有连接池中的空闲连接。Default: 0 -->
+    <property name="idleConnectionTestPeriod" value="60"/>
+    
+    <!--定义在从数据库获取新连接失败后重复尝试的次数。Default: 30 -->
+    <property name="acquireRetryAttempts" value="30"/>
+    
+    <!--获取连接失败将会引起所有等待连接池来获取连接的线程抛出异常。但是数据
+		    源仍有效保留，并在下次调用getConnection()的时候继续尝试获取连接。如果设
+		    为true，那么在尝试获取连接失败后该数据源将申明已断开并永久关闭。Default: false-->
+    <property name="breakAfterAcquireFailure" value="true"/>
+    
+    <!--因性能消耗大请只在需要的时候使用它。如果设为true那么在每个connection
+		    提交的时候都将校验其有效性。建议使用idleConnectionTestPeriod或automaticTestTable
+		    等方法来提升连接测试的性能。Default: false -->
+    <property name="testConnectionOnCheckout" value="false"/>
+	</bean>
+	
+	
+	<bean id="dataSourceCrm" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="${jdbc.driver_crm}" />
+		<property name="jdbcUrl" value="${jdbc.url_crm}" />
+		<property name="user" value="${jdbc.username_crm}" />
+		<property name="password" value="${jdbc.password_crm}" />
+		
+		 <!--连接池中保留的最小连接数。-->
+    <property name="minPoolSize" value="5"/>
+    
+    <!--连接池中保留的最大连接数。Default: 15 -->
+    <property name="maxPoolSize" value="30"/>
+    
+    <!--初始化时获取的连接数，取值应在minPoolSize与maxPoolSize之间。Default: 3 -->
+    <property name="initialPoolSize" value="10"/>
+    
+    <!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+    <property name="maxIdleTime" value="10"/>
+    
+    <!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+    <property name="acquireIncrement" value="5"/>
+    
+    <!--JDBC的标准参数，用以控制数据源内加载的PreparedStatements数量。
+		    但由于预缓存的statements属于单个connection而不是整个连接池。所以设
+		    置这个参数需要考虑到多方面的因素。如果maxStatements与maxStatementsPerConnection
+		    均为0，则缓存被关闭。Default: 0-->
+    <property name="maxStatements" value="0"/>
+    
+    <!--每60秒检查所有连接池中的空闲连接。Default: 0 -->
+    <property name="idleConnectionTestPeriod" value="60"/>
+    
+    <!--定义在从数据库获取新连接失败后重复尝试的次数。Default: 30 -->
+    <property name="acquireRetryAttempts" value="30"/>
+    
+    <!--获取连接失败将会引起所有等待连接池来获取连接的线程抛出异常。但是数据
+		    源仍有效保留，并在下次调用getConnection()的时候继续尝试获取连接。如果设
+		    为true，那么在尝试获取连接失败后该数据源将申明已断开并永久关闭。Default: false-->
+    <property name="breakAfterAcquireFailure" value="true"/>
+    
+    <!--因性能消耗大请只在需要的时候使用它。如果设为true那么在每个connection
+		    提交的时候都将校验其有效性。建议使用idleConnectionTestPeriod或automaticTestTable
+		    等方法来提升连接测试的性能。Default: false -->
+    <property name="testConnectionOnCheckout" value="false"/>
+	</bean>
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocation" value="classpath:mybatis-config.xml"/>		
+	</bean>
+
+	<bean id="sqlSessionFactoryCrm" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSourceCrm"></property>
+		<property name="configLocation" value="classpath:mybatis-config.xml"/>		
+	</bean>
+	
+	<bean name="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<bean name="transactionManagerCrm"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSourceCrm"></property>
+	</bean>
+	
+	<!--  定时任务 自动读取门店发送的mq返回消息  -->
+	<bean id="ReciveMqReplyAuto" class="com.choice.wechat.web.controller.ReciveMqReplyController"></bean>
+	<bean id="taskReciveMqReply" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<property name="timerTask">
+			<ref bean="ReciveMqReplyAuto" />
+		</property>
+	  	<!--任务执行周期 (此处单位是毫秒)-->
+		<property name="period">
+			<value>5000</value>
+		</property>
+		<!--延时10min 执行任务 -->
+		<property name="delay">
+			<value>2000</value>
+		</property>
+	</bean>
+	<!--启动定时器 -->
+	<bean id="timerBean" class="org.springframework.scheduling.timer.TimerFactoryBean">
+		<property name="scheduledTimerTasks">
+			<list>
+				<ref bean="taskReciveMqReply" />
+			</list>
+		</property>
+	</bean>
+	
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="save*" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+			<tx:method name="add*" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		     <tx:method name="create*" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		     <tx:method name="copy*" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		     <tx:method name="update*" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		     <tx:method name="delete*" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		     <tx:method name="find*" read-only="true" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		     <tx:method name="list*" read-only="true" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		     <tx:method name="is*" read-only="true" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		     <tx:method name="*" read-only="true" rollback-for="com.choice.test.exception.CRUDException,Exception" />
+		</tx:attributes>
+	</tx:advice>
+	
+
+	<aop:config>
+    	<aop:advisor pointcut="execution(* com.choice.test.service.*.*(..))" advice-ref="txAdvice" />
+    	<aop:advisor pointcut="execution(* com.choice.wechat.service..*.*(..))" advice-ref="txAdvice" />
+	</aop:config>
+
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">       
+		<property name="basePackage" value="com.choice.test.persistence" />
+	</bean>
+	
+
+	<!-- <context:annotation-config /> -->
+	
+	<context:spring-configured/>
+	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<bean id="jdbcTemplateCrm" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSourceCrm"/>
+	</bean>
+  	
+  	<context:component-scan base-package="com.choice">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<!-- 定时获取财付通对账数据-->
+	<bean id="tenPayOrderInterface" class="com.choice.wechat.web.controller.ReciveTenPayController"></bean>
+	<bean id="tenPayOrderInterfaceUtil" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="tenPayOrderInterface" />
+		</property>
+		<property name="targetMethod">
+			<value>tenPayOrderInterface</value>
+		</property>
+	</bean>
+	<bean id="tenPayOrderInterfaceTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="tenPayOrderInterfaceUtil" />
+		</property>
+   		<property name="cronExpression">
+			<value>00 30 7 * * ?</value>
+		</property>
+	</bean>
+	<!-- 定时获取支付宝对账数据-->
+	<bean id="alipayInterfaceUtil" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="autoDownLoadAlipayBills" />
+		</property>
+		<property name="targetMethod">
+			<value>downLoadAlipayBills</value>
+		</property>
+	</bean>
+	<bean id="alipayInterfaceTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="alipayInterfaceUtil" />
+		</property>
+   		<property name="cronExpression">
+			<value>00 30 18 * * ?</value>
+		</property>
+	</bean>
+	<bean id="schedulerFactory" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+ 				<ref local="tenPayOrderInterfaceTrigger"/> 
+ 				<!-- <ref local="alipayInterfaceTrigger"/> -->
+			</list>
+		</property>
+	</bean>
+
+	<!-- 定时任务 自动处理下单但是pos没有返回处理消息给客户发送消息 -->
+	<bean id="SendMsgUndoneOrderAuto" class="com.choice.wechat.web.controller.SendMsgUndoneOrder"></bean>
+	<bean id="taskSendMsgUndoneOrder" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<property name="timerTask">
+			<ref bean="SendMsgUndoneOrderAuto" />
+		</property>
+		<!--任务执行周期 (此处单位是毫秒) -->
+		<property name="period">
+			<value>40000</value>
+		</property>
+		<!--延时10min 执行任务 -->
+		<property name="delay">
+			<value>2000</value>
+		</property>
+	</bean>
+	<!--启动定时器 -->
+	<bean id="timerBeanSendMsgUndoneOrder" class="org.springframework.scheduling.timer.TimerFactoryBean">
+		<property name="scheduledTimerTasks">
+			<list>
+				<ref bean="taskSendMsgUndoneOrder" />
+			</list>
+		</property>
+	</bean>
+</beans> 

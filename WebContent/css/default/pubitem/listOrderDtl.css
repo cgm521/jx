@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**最下方div的样式**/
+#commitdiv{
+	position:fixed;
+	height:6%;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background:#c9c9c9;
+	opacity: 0.9;
+	z-index:1;
+}
+#commit-left{
+	float:left;
+	width:53%;
+	height:100%;
+	font-size:12px;
+	padding:10px 0 0 2%;
+	text-shadow:0px 0px 0px;
+	font-family:"微软雅黑";
+}
+#commit-left span{
+	color:#ff4747;
+}
+#commit-right{
+	float:right;
+	width:45%;
+	height:100%;
+	opacity: 1;
+	background-image:url(../../../image/default/tjdd.png);
+	background-size:110% 100%;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:cxf="http://cxf.apache.org/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+					http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+					http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+	
+	<bean id="sendWechatMsg" class="com.choice.assistant.service.system.ASSTServiceImpl"></bean>
+	<!-- web service -->
+	<jaxws:endpoint id="ASSTServiceImpl_" implementorClass="com.choice.webservice.IASSTService"
+		address="/ASSTServer">
+		<jaxws:implementor>
+			<ref bean="ASSTServiceImpl"/>
+		</jaxws:implementor>
+	</jaxws:endpoint>
+</beans>

@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/******************************************点菜页面***********************************************************************/
+/*热门菜品*/
+#hot-menu{
+	float:left;
+	width:50%;
+	height:100%;
+	display:block;
+	overflow:hidden;
+	background:url(../../../image/default/white.png) repeat;
+	color:#117ad6;
+}
+/*所有菜品*/
+#all-menu{
+	float:left;
+	width:50%;
+	height:100%;
+	display:block;
+	overflow:hidden;
+	background:url(../../../image/default/blue.png) repeat;
+	color:#fff;
+}
+
+/*左侧列表*/
+#menu-left{
+	float:left;
+	width:22%;
+	height:100%;
+	overflow:auto;
+	border-right:2px dotted #DCD7D6;
+}
+/*搜索按钮*/
+#gotoSearch{
+	width:100%;height:auto;text-align:center;overflow:hidden;
+}
+/*左侧列表table*/
+#list-table{
+	width:100%;
+	height:auto;
+	text-align:left;
+}
+#list-table tr{
+	widht:100%;
+	height:8%;
+}
+#list-table tr td{
+	width:100%;
+	padding:5px;
+	color:#117ad6;
+}
+/*页面右侧*/
+#menu-right{
+	float:left;
+	width:77%;
+	height:100%;
+	display:block;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+/*右侧列表table*/
+#menu-table{
+	width:100%;
+	height:auto;
+	padding:0px 0px 0px 5px;
+	border-spacing: 0px;
+}
+#menu-table tr{
+	width:100%;
+	height:14%;
+} 
+#menu-table tr td{
+	padding:5px 0px 0px 0px;
+	text-align:center;
+	width:30%;
+	border-bottom:1px solid #DCD7D6;
+}
+#menu-table tr td.texttd{
+	border:0px;
+}
+/*菜品名称，价格*/
+.cai1{
+	width:100%;
+	height:auto;
+	text-align:left;
+	font-size:15px;
+}
+.cai2{
+	width:100%;
+	height:auto;
+	text-align:left;
+	color:#ff4747;
+	font-size:10px;
+}
+/*加菜，减菜*/
+.minus{
+	float:right;
+	width:30%;
+	height:100%;
+	text-align:center;
+	padding:0px;
+}
+.number{
+	float:right;
+	width:20px;
+	height:20px;
+	text-align:center;
+	background:url(../../../image/default/number.png) no-repeat;
+	background-size:cover;
+	font-size:12px;
+	line-height:22px;
+	color:#7a7a7a;
+}
+.plus{
+	float:right;
+	width:30%;
+	height:100%;
+	text-align:center;
+	padding:0px;
+}
+/**我的菜单div**/
+#mymenudiv{
+	position:fixed;
+	height:7%;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background:#c9c9c9;
+	opacity: 0.9;
+	z-index:1;
+}
+#mymenudiv-left{
+	float:left;
+	width:58%;
+	height:100%;
+	font-size:12px;
+	padding:3% 0 0 2%;
+}
+#mymenudiv-left span{
+	color:#ff4747;
+}
+#mymenudiv-right{
+	float:right;
+	width:40%;
+	height:100%;
+	background:url(../../../image/default/mymenu.png) no-repeat;
+	opacity: 1;
+	background-size:100% 100%;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+}
+/**搜索菜品**/
+#searchdiv{
+	position:fixed;
+	height:100%;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	padding:0px;
+	display:block;
+	filter:ALPHA(opacity=80);
+	opacity: 0.8; 
+	background-color:#000;
+	z-index:99;
+}
+/*搜索菜品头部*/
+#searchdivtop{
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	width:100%;
+	height:55px;
+	display:block;
+	background:#fff;
+}
+/*搜索菜品头部左侧*/
+#search-left{
+	float:left;
+	width:78%;
+	height:100%;
+	text-align:center;
+	padding:0px 2px;
+}
+/*搜索菜品头部右侧*/
+#search-right{
+	float:right;
+	width:18%;
+	height:100%;
+	text-align:center;
+	padding:0px 1%;
+}
+
+/**************************************************************************************我的菜单页面********************************************/
+/*头部*/
+#mymenutop{
+	width:100%;
+	height:40px;
+	display:block;
+	overflow:auto;
+	background:#e4e5e5;
+	font-size:16px;
+}
+/*已点菜品*/
+#mymenutop-left{
+	float:left;
+	width:45%;
+	height:100%;
+	overflow:hidden;
+	color:#117ad6;
+	line-height:200%;
+	font-size:20px;
+	padding-left:5%;
+}	
+/*清空 加菜*/
+#mymenutop-right{
+	float:left;
+	width:45%;
+	height:100%;
+	display:block;
+	overflow:hidden;
+	text-align:right;
+}
+/*展示菜单的table*/
+#mymenu-table{
+	width:100%;
+	height:auto;
+	border-spacing: 0px;
+}
+#mymenu-table tr{
+	width:100%;
+	height:14%;
+} 
+#mymenu-table tr td{
+	text-align:center;
+	padding:1% 5%;
+	width:50%;
+	border-bottom:2px dotted #dbdbdb;
+}
+/*菜品名称，价格*/
+.cai11{
+	width:100%;
+	height:auto;
+	text-align:left;
+	font-size:15px;
+}
+.cai22{
+	width:100%;
+	height:auto;
+	text-align:left;
+	/* color:#ff4747; */
+	font-size:10px;
+}
+/*加菜，减菜*/
+.minus1{
+	float:right;
+	width:30%;
+	height:100%;
+	text-align:center;
+	padding:0px;
+}
+.number1{
+	float:right;
+	width:34px;
+	height:36px;
+	text-align:center;
+	background:url(../../../image/default/number.png) no-repeat;
+	background-size:cover;
+	color:#7a7a7a;
+	line-height:38px;
+}
+.plus1{
+	float:right;
+	width:30%;
+	height:100%;
+	text-align:center;
+	padding:0px;
+}
+/***确认提交****/
+#commitdiv{
+	position:fixed;
+	height:35px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background:#c9c9c9;
+	opacity: 0.9;
+	z-index:1;
+}
+#commit-left{
+	float:left;
+	width:58%;
+	height:100%;
+	font-size:12px;
+	padding:3% 0 0 2%;
+}
+#commit-left span{
+	color:#ff4747;
+}
+#commit-right{
+	float:right;
+	width:40%;
+	height:100%;
+	background:url(../../../image/default/tjdd.png) no-repeat;
+	opacity: 1;
+	background-size:110% 100%;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+}
+/***************************************************确认我的订单页面**********************************************************************/
+/*确认订单菜品列表*/
+#commit-table{
+	width:100%;
+	height:auto;
+	border-spacing:0px;
+	border:1px solid #c1c1c1;
+}
+#commit-table thead tr{
+	width:30%;
+	height:30px;
+	background:#e7e7e7;
+	color:#117bd3;
+	text-align:center;
+	font-size:20px;
+}
+#commit-table tbody tr td{
+	width:30%;
+	height:20px;
+	padding:5px;
+	text-align:center;
+	color:#303030;
+	border-bottom:1px dotted #d7d7d7;
+}
+#commit-table tbody tr td.redtd{
+	color:red;
+}
+/**确认订单页面显示数量和金额的table*/
+#commit-table2{
+	width:100%;
+	height:auto;
+	border-spacing:0px;
+	margin:5% auto 2%;
+	border:1px solid #c1c1c1;
+}
+#commit-table2 tbody tr td{
+	height:20px;
+	padding:5px 0px;
+	text-align:center;
+	color:#117bd3;
+}
+/*********************************************单菜，套餐详情页面样式**************************************************************/
+/**套餐大图*/
+#taocan-img{
+	width:100%;height:auto;padding:0%;margin:0 auto;
+}
+/**套餐菜品列表*/
+#taocan-table{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	border-spacing:0px;
+	border:1px solid #c1c1c1;
+}
+#taocan-table thead tr{
+	height:30px;
+	background:#e7e7e7;
+	color:#117bd3;
+	text-align:center;
+	font-size:20px;
+}
+#taocan-table tbody tr td{
+	height:20px;
+	padding:5px;
+	text-align:center;
+	color:#303030;
+	border-bottom:1px dotted #d7d7d7;
+}

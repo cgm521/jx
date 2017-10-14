@@ -1,0 +1,30 @@
+.clickImg{
+	padding:10px;
+}
+.buttonImg{
+	font-size:80%;
+	color:#717171;
+}
+.buttonImg img{
+	width:50px;
+	height:50px;
+}
+.actmTitle img{
+	width:20px;
+	height:20px;
+}
+.actmTitle *{vertical-align:middle;}
+.actmTitle span{
+	font-size:90%;
+	font-weight:bold;
+}
+.actmImgLeft{
+	width:48%;
+	padding-right:2px;
+	padding-bottom:5px;
+}
+.actmImgRight{
+	width:48%;
+	padding-left:2px;
+	padding-bottom:5px;
+}

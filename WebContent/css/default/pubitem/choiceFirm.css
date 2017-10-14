@@ -1,0 +1,127 @@
+@charset "UTF-8";
+#page{
+	width:100%;
+	text-shadow:0px 0px 0px;
+	background:#0f7ad8 repeat;
+	overflow:hidden;
+}
+#page1{
+	width:100%;
+	margin:0 auto;
+	background: #F9F8F6;
+	background-size:cover;
+}
+
+/*内容样式*/
+#main{
+	width:100%;
+	display:block;
+	padding:0px;
+	
+}
+/***********总的Div***********/
+	.bookdiv{
+		width:100%;
+		height:100%;
+		padding:0px;
+		margin:0px;
+	}
+/*左侧内容*/
+	.bookleft{
+		float:left;
+		width:94%;
+		height:100%;
+	}
+/*分店信息div*/
+	.bl{
+		width:100%;
+	 	height:28%;
+		margin:0px 5px;
+		overflow:hidden;
+	}
+	/*字母检索*/
+	.bl1{
+		float:left;
+		width:2%;
+		height:99%;
+		color:#117ad6;
+		
+	}
+	/*店面名称*/
+	.bl2{
+		float:left;
+		width:40%;
+		height:99%;
+		text-align:center;
+		font-size:22px;
+		border-bottom:2px solid #959595;
+		color:#117ad6;
+		text-align:left;
+	}
+	.bl2 p{
+		position:relative;
+		top:35%;
+		margin:0px;
+	}
+	.bl3{
+		float:left;
+		width:58%;
+		height:99%;
+		border-bottom:2px solid #959595;
+		
+	}
+	
+	#table1{
+		font-size:18px;
+		width:100%;
+		height:100%;
+	}
+	#table1 tr{
+		height:33%;
+	}
+	#table1 tr th{
+		height:33%;
+		width:40%;
+		color:#117ad6;
+	}
+	#table1 tr td{
+		height:33%;
+		width:10%;
+		color:#117ad6;
+	}
+	
+	.bookright{
+		float:right;
+		width:5%;
+		height:100%;
+		display:block;
+		color:#6a737e;
+		font-size:12px;
+		font-weight:bold;
+		padding:0px;
+		position:fixed;
+		top:0px;
+	}
+	
+	.bookright ul{
+		list-style:none;
+		margin: 0px;
+		padding:0px;
+	}
+	.bookright ul li{
+		float:right;
+		clear:both;
+	}
+	
+	#table0{
+		width:99%;
+		color:#117ad6;
+	}
+	#table0 .td1{
+		width:40%;
+		font-size:22px;
+		border-bottom:2px solid #959595;
+	}
+	#table0 .td2{
+		border-bottom:2px solid #959595;
+	}

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+img{border:none;}
+#page{
+	width:100%;
+	height:100%;
+	text-shadow:0px 0px 0px;
+	background:#0f7ad8 repeat;
+}
+#page1{
+	width:100%;
+	min-height:100%;
+	height:auto;
+	margin:0 auto;
+	background: #F9F8F6;
+	background-size:cover;
+	/* padding-bottom:580px; */
+}
+
+/*内容样式*/
+#main{
+	width:100%;
+	height:100%;
+}
+#img{
+	margin:0px auto;
+	width:100%;
+	text-align:center;
+}
+#img img{
+	margin-top:20px;
+	margin-bottom:15px;
+	width:90%;
+}
+#desks{
+	width:90%;
+	margin:0px auto;
+}
+.rooms{
+	width:90%;
+	display:none;
+	margin:0px auto;
+	border: solid #DCD7D6 1px;
+   	border-radius: 5px;
+   /* 	filter:ALPHA(opacity=20);*/
+	 /* opacity: 0.2;  */
+	background:#fff;
+}
+.rooms table{
+	font-size:18px;
+	color:#aaa;
+	width:90%;
+	margin:10px auto;
+}
+.rooms table td{
+	border-bottom: 1px #ccc solid;
+}
+#desks table{
+	font-size:20px;
+	font-weight:bold;
+	color:#117ad6;
+	width:90%;
+	margin:0px auto;
+	margin-bottom:10px;
+}
+#desks table img{
+	width:25px;
+	height:25px;
+}
+.roomtyp{
+	width:25px;
+	height:25px;
+}
+
+#desks span{
+	font-size:18px;
+	font-weight:bold;
+	color:#117ad6;
+	margin-left:5px;
+}
+#desks table tr td{
+	text-align:center;
+}
+.radio{
+	margin-left:10px;
+	width:22px;
+	height:22px;
+}
+
+	
+#suitPax{
+	display:none;
+}

@@ -1,0 +1,93 @@
+/* CSS Document */
+body{
+	background-color:#f7f7f7;
+	color:#3d3d3d;
+}
+.stateContent{
+	background-color:#ffffff;
+	height:40px;
+	text-align:center;
+}
+.stateContent table tr{
+	height:40px;
+}
+.selectType{
+	color:#00db37;
+	border-bottom:solid 2px #00db37;
+} 
+.oneOrder{
+	margin-top:10px;
+	background-color:#ffffff;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	border:1px solid #ddd;
+}
+/*.oneOrder:active {background-color:#929292;}
+.oneOrder table tr td{
+	border-bottom:solid 1px #f7f7f7;
+}
+*/
+.frist{
+	color:#656565;
+	font-size:80%;
+	padding:10px;
+	text-align:left;
+}
+.two{
+	padding-left:10px;
+	padding-bottom:10px;
+	text-align:left;
+}
+.two p{
+	font-size:120%;
+}
+.two div{
+	font-size:90%;
+	color:#656565;
+	padding-top:10px;
+}
+.three-left{
+	padding:10px;
+	font-size:90%;
+	text-align:left;
+	color:#656565;
+}
+.three-right{
+	padding-right:10px;
+	text-align:right;
+	font-size:90%;	
+}
+.three-right-menu{
+	padding-right:10px;
+	text-align:right;
+	font-size:90%;
+}
+.greenState{
+	background-color:#00db37;
+	color:#FFFFFF;
+	padding:5px;
+	border-radius:5px;
+	font-size:90%;
+}
+.redState{
+	background-color:#ff3b3b;
+	color:#FFFFFF;
+	padding:5px;
+	border-radius:5px;
+	font-size:90%;
+}
+.noOrder{
+	width:100%;
+	height:100px;
+	color:#656565;
+	text-align:center;
+	padding-top:30px;
+}
+.greenState{
+	background-color:green;
+	color:#FFFFFF;
+	padding:5px;
+	border-radius:5px;
+	font-size:90%;
+}

@@ -1,0 +1,41 @@
+	.fenDiv{
+		background-color: #FFFFFF;
+		border: 1px solid #EEEEEE;
+		border-radius: 4px;
+	 	height: 65px; 
+		font-family:微软雅黑;
+		width: 97%;
+	  	margin: 5px auto;
+	}
+	.dateDiv{
+		float: left;
+		width: 110px;
+		text-align: center;
+		margin-top: 23px;
+	}
+	.infoDiv{
+		float: left;
+		margin-top: 16px;
+	}
+	.restDiv{
+		width: 100%;
+		overflow: hidden;
+	  	text-overflow: ellipsis;
+	  	white-space: nowrap;
+	}
+	.resonDiv{
+		color: #949494;
+		font-size: 11px;
+	}
+	.recordsDiv{
+		float: right;
+		color: green;
+		width: 50px;
+		margin-top: 23px;
+	}
+.bottomDiv{
+	margin-top: 5px;
+	height: 3px;
+	background-color: #FFD368; 
+	width: 90%;
+}

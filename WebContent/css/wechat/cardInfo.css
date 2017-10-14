@@ -1,0 +1,194 @@
+@CHARSET "UTF-8";
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, blockquote, pre, form, input, textarea, fieldset, table, th, td{margin:0;padding:0; font-family:"Microsoft YaHei",SimSun;vertical-align:middle;}
+body, button{ font-size:1rem; text-align:center;}
+body{color:#231916;}
+ul, ol, li{list-style:none;}
+img{border:none;}
+a {text-decoration:none; color:#231916;}
+input:-webkit-autofill,textarea:-webkit-autofill,select:-webkit-autofill{
+	background-color:rgba(0,0,0,0);
+}
+html,body{
+	height:100%;
+}
+.jxht_body_menu{
+	background:#fff url(../../image/wechat/jxht_menubg.jpg) no-repeat;
+	background-size:100% auto;
+}
+.jxht_mbox_1{
+	position:absolute;
+	top:22%;
+	right:0;
+	width:18%;
+	padding:0rem;
+	text-align:center;
+	font-size:0.3rem;
+	color:#fff;
+	background:#c92f25;
+}
+.jxht_menu_a1{
+	display:block;
+	position:absolute;
+	top:33%;
+	right:9%;
+	padding-left:1rem;
+	font-size:1.5rem;
+	background:url(../../image/wechat/jxht_menu_ico.png) left center no-repeat;
+	background-size:auto 30%;
+	transform: rotate(-15deg);
+}
+.jxht_menu_a2{
+	display:block;
+	position:absolute;
+	top:41%;
+	right:9%;
+	padding-left:1rem;
+	font-size:1.5rem;
+	background:url(../../image/wechat/jxht_menu_ico.png) left center no-repeat;
+	background-size:auto 30%;
+	transform: rotate(-15deg);
+}
+.jxht_menu_a3{
+	display:block;
+	position:absolute;
+	top:50%;
+	right:9%;
+	padding-left:1rem;
+	font-size:1.5rem;
+	background:url(../../image/wechat/jxht_menu_ico.png) left center no-repeat;
+	background-size:auto 30%;
+	transform: rotate(-15deg);
+}
+.jxht_menu_a4{
+	display:block;
+	position:absolute;
+	top:57%;
+	right:9%;
+	padding-left:1rem;
+	font-size:1.5rem;
+	background:url(../../image/wechat/jxht_menu_ico.png) left center no-repeat;
+	background-size:auto 30%;
+	transform: rotate(-15deg);
+}
+.jxht_menuhy_1{
+	position:absolute;
+	top:67%;
+	left:5%;
+	padding: 0.2rem 0.4rem 0;
+	border: 1px solid rgba(0,0,0,.1);
+	background: #fff;
+	border-radius: 0.2rem;
+	box-shadow: 0.1rem 0.1rem 0rem rgba(0,0,0,0.8);
+	color:#000;
+	font-size: 0.8rem;
+}
+.jxht_menuhy_2{
+	position:absolute;
+	top:67%;
+	left:43%;
+	padding: 0.2rem 0.4rem 0;
+	border: 1px solid rgba(0,0,0,.1);
+	background: #fff;
+	border-radius: 0.2rem;
+	box-shadow: 0.1rem 0.1rem 0rem rgba(0,0,0,0.8);
+	color:#000;
+	font-size: 0.8rem;
+}
+.jxht_menu_txm{
+	position:absolute;
+	bottom:12%;
+	left:5%;
+	right:5%;
+	height:14%;
+}
+.jxht_menu_hd{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	height:8%;
+	padding:0.3rem;
+	background:#231916;
+}
+.jxht_menu_hdtit{
+	display:inline-block;
+	padding:0.3rem 0;
+	width:40%;
+	color:#fff;
+	font-size:1.5rem;
+}
+.jxht_menu_hdlink{
+	display:inline-block;
+	padding:0.2rem 0.3rem;
+	width:55%;
+	color:#231916;
+	background:#fff;
+	font-size:1.2rem;
+	border-radius: 0.2rem;
+}
+/*导航-end--------------------------------------------------------------------------*/
+/*积分-start--------------------------------------------------------------------------*/
+.jxht_body_score{
+	background:#fff url(../../image/wechat/jxht_jfbg.jpg) no-repeat;
+	background-size:100% auto;
+}
+.jxht_score_menubox{
+	margin:40% auto 0 auto;
+	width:80%;
+	height:15rem;
+	background:url(../../image/wechat/jxht_jf_mbg.png) center top no-repeat;
+	background-size:100% auto;
+}
+.jxht_score_a1{
+	display:block;
+	padding:1rem 0 0.9rem 2.7rem;
+	font-size:1.1rem;
+	color:#fff;
+	text-align:left;
+}
+.jxht_score_a2{
+	display:block;
+	padding:0.8rem 0 1.5rem 2.7rem;
+	font-size:1.1rem;
+	color:#fff;
+	text-align:left;
+}
+.jxht_score_a3{
+	display:block;
+	padding:1.3rem 0 2rem 2.7rem;
+	font-size:1.1rem;
+	color:#fff;
+	text-align:left;
+	transform: rotate(10deg);
+}
+.jxht_score_case{
+	position:absolute;
+	z-index:-1;
+	top:0.8rem;
+	bottom:0.8rem;
+	left:0.8rem;
+	right:0.8rem;
+	border:0.4rem solid #C92F25;
+}
+.jxht_score_fw{
+	position:absolute;
+	z-index:-1;
+	bottom:0;
+	right:0;
+	width:60%;
+	height:27%;
+	background:url(../../image/wechat/jxht_fw.png) no-repeat;
+	background-size:cover;
+}
+.jxht_score_back{
+	position:absolute;
+	bottom:2rem;
+	left:2rem;
+	width:1.6rem;
+	height:1.2rem;
+	display:block;
+	background:#030102 url(../../image/wechat/jxht_arr_right.png) center center no-repeat;
+	background-size:auto 90%;
+	border-radius: 0.2rem;
+}
+/*积分-end--------------------------------------------------------------------------*/

@@ -1,0 +1,236 @@
+/* calendar styles by http://www.codefans.net*/
+#calendar_div {
+	display: none;
+	/* border: 1px solid #777; */
+	z-index: 10; 
+	font-size: 20px;
+	width : 100%;
+	height : 100%;
+	background:#fff;
+	/* background-image:url("../image/date_bg.jpg"); */
+	/* background-repeat:no-repeat; */
+	/* background-size:cover; */
+}
+#calendar_div a {
+	cursor: pointer;
+}
+button.calendar_trigger {
+	width: 20px;
+}
+img.calendar_trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+#calendar_links, #calendar_header, #calendar_time {
+	clear: both;
+	float: left;
+	width: 100%;
+	
+}
+#calendar{
+	height : 78%;
+	width : 100%;
+}
+#title {
+	background-image:url("../image/top2.png");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	height : 40px;
+	line-height:40px;
+	color:#fff;
+	font-size:20px;
+	text-align:center;
+	text-shadow:none;
+}
+#title img{
+	height:35px;
+}
+#choose {
+	background-image:url("../image/text.png");
+ 	position:absolute;
+}
+#calendar_control {
+}
+#calendar_links {
+	padding:15px 0px;
+	width:100%;
+	font-size:18px;
+}
+#calendar_control>a, #calendar_links>a {
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-family:"鏂规缁嗗渾绠�綋";
+	text-shadow:0px 0px 0px;
+}
+#calendar_control>a:hover {
+}
+#calendar_links>a:hover, .calendar_titleRow a:hover {
+	font-family:"鏂规缁嗗渾绠�綋";
+	text-shadow:0px 0px 0px;
+	height : 90%;
+}
+#calendar_clear, #calendar_prev {
+	float: left;
+	height : 100%;
+	width:33.3%;
+	text-align:center;
+}
+#calendar_current {
+	float: left;
+	height : 100%;
+	text-align: center;
+	width:33.3%;
+}
+#calendar_close, #calendar_next {
+	float: right;
+	height : 100%;
+	width:33.3%;
+	text-align:center;
+}
+#calendar_header, #calendar_time {
+	font-size:21px;
+	text-align: center;
+	font-weight: bold;
+	padding:0px 0px 15px 0px;
+}
+#calendar{
+	text-align: center;
+	font-size: 18px;
+	border-collapse: separate;
+    border-width:0px;
+}
+#calendar td{
+    padding:0px;
+    font:normal 18px 锟斤拷锟斤拷;
+    text-align: center; 
+    font-family:"鏂规缁嗗渾绠�綋";
+	text-shadow:0px 0px 0px;
+}
+#calendar a {
+	width: 100%;
+	display: block;
+}
+#calendar a:hover {
+	color: #eee;
+}
+#calendar .calendar_titleRow {
+	border-width:0px;
+    border-color:#777;
+	height:20px;
+}
+#calendar .calendar_titleRow > td{
+	font-family:"鏂规缁嗗渾绠�綋";
+	text-shadow:0px 0px 0px;
+	border-width:0px;
+	height : 11%;
+}
+#calendar .calendar_titleRow a {
+	font-family:"鏂规缁嗗渾绠�綋";
+	text-shadow:0px 0px 0px;
+}
+#calendar .calendar_titleRow a:hover {
+	color: #000;
+}
+#calendar .calendar_daysRow {
+	height:18px;
+}
+#calendar .calendar_daysCell {
+	border: 0px solid #ddd;
+	height:18px;
+}
+#calendar .calendar_daysCell a {
+	width: 100%;
+}
+#calendar .calendar_daysCell a:hover {
+}
+#calendar .calendar_weekEndCell {
+	color : red;
+}
+#calendar .calendar_daysCellOver {
+	background-image:url("../image/choose.png")
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#calendar .calendar_unselectable {
+	color: #999;
+}
+#calendar_today {
+}
+#calendar_currentDay {
+	background:url("../image/current01.png") no-repeat center center;
+	background-size:40px 40px;
+	/* background-image:url("../image/current.png"); */
+	/* background-repeat:no-repeat; */
+	/* background-size:30px 30px; */
+}
+#calendar_cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -1px; /*must have*/
+    left: -1px; /*must have*/
+    width: 300px; /*must have to match width and borders*/
+    height: 300px; /*must have to match maximum height*/ 
+}
+#CLD_OK{
+    margin:auto;
+    float:right;
+    margin-right:15px;
+    width:100%;
+    height:100%;
+    line-height:18px;
+    cursor:pointer;
+    display:inline;
+}
+.btOK_out{
+    margin:auto;
+    float:left;
+    font-weight:normal;
+    margin-right:15px;
+    width:100%;
+    margin-top:2px;
+    height:100%;
+    line-height:18px;
+    cursor:pointer;
+}
+.btOK_over{
+    margin:auto;
+    float:left;
+    font-weight:normal;
+    margin-right:15px;
+    width:100%;
+    margin-top:2px;
+    height:100%;
+    line-height:18px;
+    cursor:pointer;
+}
+.select{
+	float:left;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	width:49.8%;
+	margin-top:auto;
+	font:normal 21px 锟斤拷锟斤拷;
+	padding:5px 0px
+	font-family:"鏂规缁嗗渾绠�綋";
+	text-shadow:0px 0px 0px;
+}
+.select > select {
+    	font:normal 21px 锟斤拷锟斤拷;
+	float:left;
+	width:30%;
+	border-width:0px;
+	margin-top:-1px;
+	*margin-top:-2px;
+	margin-left:-1px;
+	border-style: none;
+    border-width: 0px;
+}
+.select > select > option{
+	border-width:0px;
+}
+

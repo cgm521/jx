@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.validateMsg {
+	position: absolute;
+	padding: 2px;
+	background-color: #FEF2FD;
+	border: 1px solid #EE2E52;
+	color: #A38E8E;
+	z-index: 2;
+}

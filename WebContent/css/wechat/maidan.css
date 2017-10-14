@@ -1,0 +1,97 @@
+body{
+	color:#3d3d3d;
+	background-color:#f7f7f7;
+}
+a { 
+	text-decoration:none;
+	color:#ffffff;
+}
+img{
+	width:50px;
+	height:50px;
+	vertical-align:text-bottom;
+}
+.firm{
+	width:100%;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:5px;
+	z-index:999;
+}
+.order{
+	width:100%;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:5px;
+	color:#656565;
+}
+.topRadius td{
+	border-radius:5px 5px 5px 5px;
+}
+.bottomRadius td{
+	border-radius:0px 0px 5px 5px;
+}
+.detail{
+	background-color:#FFFFFF;
+	text-align:left;
+	padding:5px;
+}
+.spaceMeaage{
+	text-align:left;
+	padding-left:5%;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:120%;
+}
+.detail2{
+	background-color:#FFFFFF;
+	text-align:center;
+	padding:10px;
+}
+.detail2 input[type="button"]{
+	padding:10px;
+	width:40%;
+	background-color:#ffb400;
+	border:0;
+	border-radius:5px;
+	color:#FFFFFF;
+	text-align:center;
+}
+.bottDiv{
+	width:100%;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	height:50px;
+}
+.bottDiv table tr{
+	height:50px;
+}
+#ui-a{
+	background-color: #000000;
+	border: none;
+	text-align: left;
+	width:40%;
+	padding-left:10px;
+}
+#ui-a img{
+	border:0;
+	padding:0;
+	height:28px;
+	width:26px;
+}
+.orderSpace{
+	width:100%;
+	height: 80px;
+	border:0;
+	margin:0;
+}
+	.inputContent{
+		background-color: #FFFFFF;
+		border:1px solid #EEEEEE;
+		border-radius:4px;
+		height:28px;
+		width:50%;
+	}

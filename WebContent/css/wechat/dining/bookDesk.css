@@ -1,0 +1,266 @@
+.headerDate{
+	padding-top:5px;
+	padding-bottom:5px;
+	width:30%;
+	border-bottom:1px solid #eeeeee;
+}
+.fenge{
+	/*background-image:url('../../../image/wechat/fenge.png');*/
+	background-image:url('../../../image/wechat/fenge_hui.png');
+	background-repeat:no-repeat;
+	background-position:99%;
+	background-size:5px 90%;
+}
+.fenge_hui{
+	background-image:url('../../../image/wechat/fenge_hui.png');
+	background-repeat:no-repeat;
+	background-position:99%;
+	background-size:5px 90%;
+}
+.headerDateNoSelect{
+	background-color:#ffffff;
+}
+.headerDateSelect{
+	background-color:#ffb400;
+	color:#FFFFFF;
+}
+.headerDateNoSelect .dateSpan{
+	color:#ffb400;
+}
+.headerDateFrame{
+	width:10%;
+	border-bottom:1px solid #eeeeee;
+	background-color:#ffb400;
+}
+.headerDateFrame img{
+	width:25px;
+	height:25px;
+}
+.dateAndperson{
+	width:50%;
+	background-color:#ffffff;
+	color:#999999;
+	padding:10px;
+	font-size:80%;
+	border-bottom:1px solid #eeeeee;
+	border-top:1px solid #eeeeee;
+	text-align:center;
+}
+.dateAndperson span{
+	display:block; 
+	text-align:center;
+	padding-top:8px;
+	padding-bottom:8px;
+	color:#ffffff;
+	background-color:#ffb400;
+	border:1px solid #ffb400;
+	border-radius:4px;
+	font-weight:bold;
+}
+.mypopup{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:45%;
+	background-color: #ffffff;
+	border:0;
+	text-shadow:none;
+}
+.mypopupScroller { 
+	position:relative; /* */
+	z-index:100; 
+	height:74%;        /* Desired element height */ 
+	float:left;
+	width:100%;
+}
+.popupTitle{
+	border-bottom:1px solid #eeeeee;
+	text-align:center;
+	height:13%;
+}
+.popupNoSelect{
+	padding:5px;
+	color:#999999;
+}
+.popupSelect{
+	padding:5px;
+	color:#ffb400;
+	background-color: #eeeeee;
+}
+.popupComplate{
+	clear:both;
+	background-color: #ffb400;
+	color:#ffffff;
+	text-align:center;
+	height:13%;
+}
+.popupTitle table,
+.popupComplate table{
+	height:100%;
+}
+.time{
+	margin-top:10px;
+	background-color:#ffffff;
+	border-top:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;
+}
+.timeTop{
+	border-bottom:1px solid #eeeeee;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.timeTopLeft{
+	padding-left:10px;
+	width:30px;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family: Arial;
+}
+.timeTopLeft img{
+	width:20px;
+	height:20px;
+}
+.timeTopRight{
+	padding-left:5px;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+}
+.timeTopRightText{
+	/*
+	color:#999999;
+	*/
+	font-size:80%;
+  	font-family: Arial;
+	
+}
+.timeBottom{
+	margin-left:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.timeBottomTD{
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-right:10px;
+	font-family: Arial;
+}
+.timeSpan{
+	display:block; 
+	width:100%;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.canotSelect{
+	color:#D5D5D5;
+	border:1px solid #D5D5D5;
+	border-radius:4px;
+}
+.canSelect{
+	color:#ffb400;
+	border:1px solid #ffb400;
+	border-radius:4px;
+}
+.selected{
+	color:#ffffff;
+	border:1px solid #ffb400;
+	border-radius:4px;
+	background-color:#ffb400;
+}
+.space{
+	height:50px;
+}
+.bottDiv{
+	width:100%;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	height:50px;
+	position:fixed;
+}
+.bottDiv table tr{
+	height:50px;
+}
+#ui-a{
+	background-color: #000000;
+	border: none;
+	text-align: left;
+	width:40%;
+	padding-left:10px;
+}
+#ui-a img{
+	border:0;
+	padding:0;
+	height:28px;
+	width:26px;
+}
+#ui-b{
+	background-color: #000000;
+	border: none;
+	width:30%;
+} 
+#ui-c{
+	background-color: #ffb400;
+	border: none;
+	width:30%;
+	text-align: center;
+	color:#ffffff;
+}
+.fontblod{
+	font-weight:bold;
+}
+.firmDes{
+	font-size:110%;
+}
+.timeTopRightDetail{
+	color:#656565;
+	font-size:80%;
+}
+.sexTD{
+	text-align:center;
+	width:50px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.sexSpan{
+	display:block; 
+	width:50px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.inputContent{
+	border:1px solid #ffffff;
+	border-radius:4px;
+	height:35px;
+	width:96%;
+	font-family: Arial;
+}
+.mealRight{
+	width:50px;
+	text-align:right;
+	padding-right:10px; 
+}
+.mealRight img{
+	height:40px;
+	width:40px;
+}
+.mealLeft{
+	text-align:left;
+	padding-left:10px;
+	color:#656565;
+}
+.mealLeftSelect{
+	text-align:left;
+	padding-left:10px;
+	color:#ffb400;
+}
+.detail{
+	background-color:#FFB400;
+	text-align:left;
+	padding:10px;
+}
